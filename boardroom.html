@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Boardroom - I Agree</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style type="text/css" media="screen">
+    body {background:#ccc;}
+    .panel-heading {background:#333 !important;}
+    .panel-title {color:#fff;}
+/*    .nav {background:#333;}*/
+    .nav a {color:#000 !important;}
+    .sidebar-heading {color:#fff;}
+    .sidebar-nav ul {list-style:none;}
+    .sidebar-nav ul li ul li {line-height:20px;}
+  </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+      
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="dashboard.html">
+                        <img src="img/logo.png" alt="I Agree"/>
+                    </a>
+                </li>
+                <li style="background:#666;">
+                    <a style="color:#fff;" href="#">Notifications <strong class="pull-right ">2</strong></a>
+                </li>
+                <li style="background:#666;">
+                    <a style="color:#fff;" href="#">Contracts <strong class="pull-right">3</strong></a>
+                </li>
+                
+                <li>
+                    <ul>
+                      <li>
+                        <a href="#">Sort by: <b>Last Modified</b> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                      </li>
+                      <li class="sidebar-heading text-success">In Progress
+                        <ul>
+                          <li>
+                            <a href="">American Bank 1<br>
+                            <small class="text-muted">Last mod: 2020-01-01</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">American Bank 1<br>
+                            <small class="text-muted">Last mod: 2020-01-01</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">American Bank 1<br>
+                            <small class="text-muted">Last mod: 2020-01-01</small>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="sidebar-heading">Not Started</li>
+                      <li class="sidebar-heading">Draft</li>
+                      <li class="sidebar-heading">Finalized</li>
+                    </ul>
+                </li>
+                
+                <li style="background:#666;">
+                    <a style="color:#fff;" href="#">Archived Contracts</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+              <a style="position:absolute; top:0; left:-30px; z-index:3000;" href="#menu-toggle" class="btn btn-default" id="menu-toggle">&larr; &rarr;</a>
+                <div class="pull-right">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> John Doe <br>
+                      <small>Associate</small>
+                      </a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Contract</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                  </ul>
+                </div>
+                
+                
+                
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                      <!-- <p>
+                        <span class="toggleable glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#toc" aria-expanded="true" aria-controls="toc"></span>
+                        <span class="toggleable glyphicon glyphicon-comment" data-toggle="collapse" data-target="#comments" aria-expanded="false" aria-controls="comments"></span>
+                        <span class="toggleable glyphicon glyphicon-history" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="history"></span>
+                        <span class="toggleable glyphicon glyphicon-group" data-toggle="collapse" data-target="#contractingparties" aria-expanded="false" aria-controls="contractingparties"></span>
+                        <button id="collapse-init" class="btn btn-small">
+                            Show all
+                        </button>
+                      </p> -->
+                      
+                        <h3 class="toggleable" data-toggle="collapse" data-target="#toc" aria-expanded="true" aria-controls="toc">Table of Contents <small class="glyphicon glyphicon-th-list"></small></h3>
+                        <div class="collapse in" id="toc">
+                          <ul>
+                            <li>
+                              <a href="">Segment 1</a>
+                            </li>
+                            <li>
+                              <a href="">Segment 2</a>
+                            </li>
+                            <li>
+                              <a href="">Segment 3</a>
+                            </li>
+                          </ul>
+                        </div>
+                      
+                        <h3 class="toggleable" data-toggle="collapse" data-target="#comments" aria-expanded="true" aria-controls="comments">Comments <small class="glyphicon glyphicon-comment"></small></h3>
+                        <div class="collapse" id="comments">
+                          <ul>
+                            <li><a href="#">Segment 1, Line 4</a><br>
+                            <small class="text-muted">by Mark Twain, Oct 14 2015</small></li>
+                            <li><a href="#">Segment 2, Line 1</a><br>
+                            <small class="text-muted">by Lewis Carroll, Oct 13 2015</small></li>
+                          </ul>
+                        </div>
+                      
+                        <h3 class="toggleable" data-toggle="collapse" data-target="#history" aria-expanded="true" aria-controls="history">History <small class="glyphicon glyphicon-time"></small></h3>
+                        <div class="collapse" id="history">
+                          <ul>
+                            <li><a href="#">Edited by Mark Twain</a><br>
+                            <span class="text-muted">12:45 PM, Oct 14 2015</span></li>
+                            <li><a href="#">Edited by Lewis Caroll</a><br>
+                            <span class="text-muted">7:03 PM, Oct 13 2015</span></li>
+                          </ul>                        
+                        </div>
+                      
+                        <h3 class="toggleable" data-toggle="collapse" data-target="#contractingparties" aria-expanded="true" aria-controls="contractingparties">Contracting Parties <small class="glyphicon glyphicon-user"></small><small class="glyphicon glyphicon-user"></small><small class="glyphicon glyphicon-user"></small></h3>
+                        <div class="collapse" id="contractingparties">
+                          <ul>
+                            <li>Mark Twain, Associate River Corp MTwain@Rivercorp.com
+                            ###-###-####</li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 whitebg">
+                      
+                      <h1>Contract Name</h1>
+                      <dl class="dl-horizontal">
+                        <dt>Time started:</dt> <dd>2015-10-11</dd>
+                        <dt>Last modified:</dt> <dd>2 hours ago</dd>
+                        <dt>Time elapsed:</dt> <dd>7 hours</dd>
+                        <dt>Status:</dt> <dd>In Progress</dd>
+                        <dt>Company Name:</dt> <dd>ACME, Ltd.</dd>
+                        <dt>Contract Type:</dt> <dd>NDA</dd>
+                      </dl>
+                      
+                      <h2 class="toggleable" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Segment Title <small><span class="glyphicon glyphicon-plus"></span></small></h2>
+                      <div class="collapse" id="collapseExample">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      
+                      <h2 class="toggleable" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Segment Title <small><span class="glyphicon glyphicon-plus"></span></small></h2>
+                      <div class="collapse" id="collapseExample2">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">Review all segments
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-large btn-success">Save Changes</button>
+                      
+                    </div> <!-- /.col-lg-8 -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

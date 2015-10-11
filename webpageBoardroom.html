@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"> 
+    <meta charset="utf-8"><title>Dashboard</title>
+    <style type="text/css">* {font-family:arial, sans-serif;}</style> 
+
+	<script>
+	function OpenInNewTab(url, operation, section) {
+		if (section > 0) url = url + operation + section;
+		var win = window.open(url, '_blank');
+		win.focus();
+	}
+	
+	</script>
+	<div align='right'>userID</div>
+	<div>
+	
+	<div>section 1<br>this is the start of section 1
+	<button type="button" onclick="OpenInNewTab('http://localhost:3000','/?expand=',1)">expand</button>
+	<button type="button" onclick="OpenInNewTab('http://localhost:3000','/?update=',1)">save changes</button>
+	</div>
+	<div>section 2<br>this is the start of section 2
+	<button type="button" onclick="OpenInNewTab('http://localhost:3000','/?expand=',1)">expand</button>
+	<button type="button" onclick="OpenInNewTab('http://localhost:3000','/?update=',1)">save changes</button>
+</div>
+	
+	</div>
+	<br>
+ 	<button type="button" onclick="OpenInNewTab('http://localhost:3000','',0)">home</button>
+	</div>
+	
+    

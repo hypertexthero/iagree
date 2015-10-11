@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"> 
+    <meta charset="utf-8"><title>Login</title>
+    <style type="text/css">* {font-family:arial, sans-serif;}</style> 
+
+	<script>
+	function OpenInNewTab(url) {
+		userID = document.getElementById('userID').value;
+		url = url + '/?id='  + userID;
+		var win = window.open(url, '_blank');
+		win.focus();
+	}
+	</script>
+	
+    <h1>iAgree Login</h1> 
+    <div id="content"><p>enter you login and password below and press enter</p>
+	<div>
+	  User Name:<br>
+  <input type="text" id="userID">
+  <br>
+  Password:<br>
+  <input type="text" id="userPW">
+	<button type="button" onclick="OpenInNewTab('http://localhost:3000')">enter</button>
+	</div>
+	
+    
